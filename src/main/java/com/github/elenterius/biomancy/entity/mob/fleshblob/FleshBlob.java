@@ -41,8 +41,8 @@ import java.util.function.BiConsumer;
 
 public abstract class FleshBlob extends PathfinderMob implements Fleshkin, JumpMoveHelper.JumpingPathfinderMob, JukeboxDancer, GeoEntity {
 
-	public static final byte MAX_SIZE = 10;
-	public static final byte MIN_SIZE = 1;
+	public static final byte MAX_SIZE = 30;
+	public static final byte MIN_SIZE = 15;
 	public static final byte JUMPING_STATE_ID = 61;
 	protected static final RawAnimation ON_GROUND_ANIMATION = RawAnimation.begin().thenLoop("ground.loop");
 	protected static final RawAnimation JUMP_START_ANIMATION = RawAnimation.begin().thenPlay("jump.startup").thenPlayAndHold("jump.air.loop");
